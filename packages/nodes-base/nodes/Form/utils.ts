@@ -25,51 +25,52 @@ import { WebhookAuthorizationError } from '../Webhook/error';
 import { validateWebhookAuthentication } from '../Webhook/utils';
 
 export function sanitizeHtml(text: string) {
-	return sanitize(text, {
-		allowedTags: [
-			'b',
-			'div',
-			'i',
-			'iframe',
-			'img',
-			'video',
-			'source',
-			'em',
-			'strong',
-			'a',
-			'h1',
-			'h2',
-			'h3',
-			'h4',
-			'h5',
-			'h6',
-			'u',
-			'sub',
-			'sup',
-			'code',
-			'pre',
-			'span',
-			'br',
-			'ul',
-			'ol',
-			'li',
-			'p',
-		],
-		allowedAttributes: {
-			a: ['href', 'target', 'rel'],
-			img: ['src', 'alt', 'width', 'height'],
-			video: ['*'],
-			iframe: ['*'],
-			source: ['*'],
-		},
-		transformTags: {
-			iframe: sanitize.simpleTransform('iframe', {
-				sandbox: '',
-				referrerpolicy: 'strict-origin-when-cross-origin',
-				allow: 'fullscreen; autoplay; encrypted-media',
-			}),
-		},
-	});
+	return text;
+	// return sanitize(text, {
+	// 	allowedTags: [
+	// 		'b',
+	// 		'div',
+	// 		'i',
+	// 		'iframe',
+	// 		'img',
+	// 		'video',
+	// 		'source',
+	// 		'em',
+	// 		'strong',
+	// 		'a',
+	// 		'h1',
+	// 		'h2',
+	// 		'h3',
+	// 		'h4',
+	// 		'h5',
+	// 		'h6',
+	// 		'u',
+	// 		'sub',
+	// 		'sup',
+	// 		'code',
+	// 		'pre',
+	// 		'span',
+	// 		'br',
+	// 		'ul',
+	// 		'ol',
+	// 		'li',
+	// 		'p',
+	// 	],
+	// 	allowedAttributes: {
+	// 		a: ['href', 'target', 'rel'],
+	// 		img: ['src', 'alt', 'width', 'height'],
+	// 		video: ['*'],
+	// 		iframe: ['*'],
+	// 		source: ['*'],
+	// 	},
+	// 	transformTags: {
+	// 		iframe: sanitize.simpleTransform('iframe', {
+	// 			sandbox: '',
+	// 			referrerpolicy: 'strict-origin-when-cross-origin',
+	// 			allow: 'fullscreen; autoplay; encrypted-media',
+	// 		}),
+	// 	},
+	// });
 }
 
 export const prepareFormFields = (context: IWebhookFunctions, fields: FormFieldsParameter) => {
