@@ -33,7 +33,7 @@ export const cssVariables = `
 	--color-input-border: #dbdfe7;
 	--color-input-text: #71747A;
 	--color-focus-border: rgb(90, 76, 194);
-	--color-submit-btn-bg: #ff6d5a;
+	--color-submit-btn-bg: #2b2b2b;
 	--color-submit-btn-text: #ffffff;
 	--color-error: #ea1f30;
 	--color-required: #ff6d5a;
