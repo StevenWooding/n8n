@@ -456,6 +456,8 @@
 
 					<div class='inputs-wrapper'>
 						{{#each formFields}}
+							<span style="display:none" id="label_{{label}}">{{id}}</span>
+						
 							{{#if isMultiSelect}}
 								<div>
 									<label class='form-label {{inputRequired}}'>{{label}}</label>
