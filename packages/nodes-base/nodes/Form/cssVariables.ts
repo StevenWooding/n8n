@@ -6,7 +6,7 @@ export const cssVariables = `
 	--font-size-body: 12px;
 	--font-size-label: 14px;
 	--font-size-test-notice: 12px;
-	--font-size-input: 14px;
+	--font-size-input: 19px;
 	--font-size-header: 20px;
 	--font-size-paragraph: 14px;
 	--font-size-link: 12px;
@@ -34,13 +34,15 @@ export const cssVariables = `
 	--color-input-text: #71747A;
 	--color-focus-border: rgb(90, 76, 194);
 	--color-submit-btn-bg: #2b2b2b;
-	--color-submit-btn-text: #ffffff;
+	--color-submit-btn-text: #bbbbbb;
 	--color-error: #ea1f30;
 	--color-required: #ff6d5a;
 	--color-clear-button-bg: #7e8186;
 	--color-html-text: #555;
 	--color-html-link: #ff6d5a;
 	--color-header-subtext: #7e8186;
+
+ --box-shadow-submit-btn : inset 1rem 1rem 1.4rem 0px rgba(255, 255, 255, 0.1), inset -1rem -1rem 1.4rem 0px rgba(0, 0, 0, 0.2), 1rem 1rem 1rem -1rem rgba(0, 0, 0, 0.1);
 
 	/* Border Radii */
 	--border-radius-card: 8px;
