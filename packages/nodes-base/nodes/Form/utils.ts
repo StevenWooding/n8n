@@ -203,6 +203,7 @@ export function prepareFormData({
 		} else if (fieldType === 'html') {
 			input.isHtml = true;
 			input.html = field.html as string;
+			input.label = field.elementName;
 		} else if (fieldType === 'hiddenField') {
 			input.isHidden = true;
 			input.hiddenName = field.fieldName as string;
