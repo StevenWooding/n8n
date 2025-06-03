@@ -226,7 +226,7 @@ export const formFields: INodeProperties = {
 					noDataExpression: true,
 					default: placeholder,
 					description: 'HTML elements to display on the form page',
-					hint: 'Does not accept <code>&lt;script&gt;</code>, <code>&lt;style&gt;</code> or <code>&lt;input&gt;</code> tags',
+					hint: 'When using slite components remember to add the "name" property in the component tag and set it equal to the "Element Name" field value',
 					displayOptions: {
 						show: {
 							fieldType: ['html'],
